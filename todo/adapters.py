@@ -1,5 +1,8 @@
+# myapp/adapters.py
+
 from allauth.account.adapter import DefaultAccountAdapter
 from django.contrib import messages
+
 
 class MyAccountAdapter(DefaultAccountAdapter):
 
