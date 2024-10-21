@@ -611,7 +611,7 @@ python manage.py test todo.tests.TodoTests.test_create_todo
 All tests are located in the `tests.py` file within the todo app directory.
 
 
-# Deploymnt
+# Deployment
 
 The repo was created in Github. Code was created and update updated in Gitpod.
 
