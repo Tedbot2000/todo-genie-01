@@ -97,11 +97,13 @@ and:
     As a user I can view responsive content so that I can access and use it easily on 
     different devices (desktop, tablet, mobile).
 
-        When a user opens the application on different devices, the layout adjusts appropriately to the screen size.
+        When a user opens the application on different devices, the layout adjusts appropriately to the
+        screen size.
 
         The to-do list is readable and usable on all device sizes without requiring horizontal scrolling.
 
-        Buttons, forms, and interactive elements are appropriately sized for touch interaction on mobile devices.
+        Buttons, forms, and interactive elements are appropriately sized for touch interaction on
+        mobile devices.
 
 
 
