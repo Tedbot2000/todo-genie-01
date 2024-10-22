@@ -18,13 +18,13 @@ Do more with the Django application that is your daily manager for things you ne
 
 6. **Responsive Design:** The application is designed to be responsive, ensuring a seamless user experience across various devices and screen sizes.
 
-![Responsive Design](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/Responsive.png)
+![Responsive Design](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/Responsive.png)
 
 
 ## User Experience (UX)
 
 
-ToDo Genie is designed as a simple yet powerful task management tool that caters to individuals who value efficiency, organisation, and ease of use. The app's UX design emphasises simplicity and clarity, providing users with an intuitive interface that helps them manage their daily tasks effectively. With a clean and minimalistic aesthetic, ToDo Genie ensures that users can focus on what matters most — getting things done.
+ToDo Genie is designed as a simple yet powerful task management tool that caters to individuals who value efficiency, organisation, and ease of use. The app's UX design emphasises simplicity and clarity, providing users with an intuitive interface that helps them manage their daily tasks effectively. With a clean and minimalistic aesthetic, ToDo Genie ensures that users can focus on what matters most—getting things done.
 
 
 ### Site User
@@ -35,6 +35,7 @@ The primary users of ToDo Genie are individuals from various backgrounds who see
 ### Goal
 
 ToDo Genie aims to provide users with a streamlined and efficient way to manage their tasks, ensuring they stay on top of their commitments and goals. By offering essential features such as task creation, (and, in a future version, prioritisation, and tracking), the app helps users organise their day-to-day activities with ease. The goal is to create a minimalist, user-focused experience that simplifies task management, making it easier for users to achieve their personal and professional objectives without distraction.
+
 
 
 ## Database Structure & Purpose
@@ -247,7 +248,7 @@ For the development of ToDo Genie, I adopted an Agile approach to ensure continu
 
 The Kanban board acted as the cornerstone of project management, providing a real-time snapshot of task progression. The board was divided into the following sections:
 
-![User Stories](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/UserStories.png)
+![User Stories](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/UserStories.png)
 
 **To Do:** This column was where tasks and user stories that were identified but not yet prioritised for development were listed.
 
@@ -278,13 +279,13 @@ and:
     As a user I can view responsive content so that I can access and use it easily on 
     different devices (desktop, tablet, mobile).
 
-        When a user opens the application on different devices, the layout adjusts appropriately to the
-        screen size.
+        When a user opens the application on different devices, the layout adjusts 
+        appropriately to the screen size.
 
-        The to-do list is readable and usable on all device sizes without requiring horizontal scrolling.
+        The to-do list is readable and usable on all device sizes without horizontal scrolling.
 
-        Buttons, forms, and interactive elements are appropriately sized for touch interaction on
-        mobile devices.
+        Buttons, forms, and interactive elements are appropriately sized for touch interaction
+        on mobile devices.
 
 
 
@@ -304,7 +305,7 @@ To visualise the user interface and user experience of the application, two wire
 
 The mobile wireframe is designed to accommodate the smaller screen size and touch-based interaction of mobile devices. The layout is optimised for portrait mode, with a focus on simplicity and ease of use.
 
-![Mobile Wireframe](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/wireframes/MobileWireframe.png)
+![Mobile Wireframe](https://github.com/Tedbot2000/todo-genie/blob/main/docs/wireframes/MobileWireframe.png)
 
 Key features of the mobile wireframe include:
 
@@ -317,7 +318,7 @@ Key features of the mobile wireframe include:
 
 The desktop wireframe takes advantage of the larger screen size and mouse-based interaction to provide a more detailed and feature-rich experience. The layout is optimized for a wider range of screen resolutions and aspect ratios.
 
-![Desktop Wireframe](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/wireframes/DesktopWireframe.png)
+![Desktop Wireframe](https://github.com/Tedbot2000/todo-genie/blob/main/docs/wireframes/DesktopWireframe.png)
 
 Key features of the desktop wireframe include:
 
@@ -352,7 +353,7 @@ The colour scheme for the application is a combination of three distinct colours
 - **Goldenrod (#dfad38):** A warm, vibrant yellow-orange tone that adds a touch of energy and optimism to the design. This colour is used in the logo and main background image to add visual interest to the design.
 - **#Baby Powder (#fdfdfb):** A soft, calming white tone with a hint of warmth, providing a clean and gentle contrast to the other colours. This colour is used as a card background colour to provide a clean but subtle and understated approach.
 
-![Colours](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/coolors.png)
+![Colours](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/coolors.png)
 
 
 ### Colour Rationale:
@@ -429,10 +430,10 @@ The todo_list.html template displays the following content:
     - If a task is not started the button will appear grey
     - If a task is in progress the button will appear orange
     - When a task is completed the button will appear green
-- **Task Actions:** The template includes a button for editing tasks, allowing users to update them, and for deleting tasks, allowing users to remove them.
+- **Task Actions:** The template includes an actions for editing tasks, allowing users to update them, and for deleting tasks, allowing users to remove them.
 
-![Task List Widescreen](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/TaskListWide.png)
-![Task List Widescreen](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/TaskListNarrow.png)
+![Task List Widescreen](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/TaskListWide.png)
+![Task List Widescreen](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/TaskListNarrow.png)
 
 ### Edit Task Page Template (edit_task.html)
 
@@ -454,7 +455,7 @@ The edit_tas.html template displays the following content:
 
 ## ToDo Model
 
-The toDo model is used to represent the tasks within the ToDo Genie Django application. Below is an outline of the model's primary attributes and features:
+The toDo model is used to represent the tasks within the ToDo Genie Pro Django application. Below is an outline of the model's primary attributes and features:
 
 
 ### Fields:
@@ -476,7 +477,7 @@ Here are the Task Views defined in the **views.py** file:
 **1. todo_list**
 
 - This view retrieves a list of all to-do list tasks from the database and renders the todo_list.html template, passing the task list as a context variable.
-- The todo_list view is called when the, logged in, user visits the root URL of the application ('').
+- The todo_list view is called when the, logged in,  user visits the root URL of the application ('').
 
 **2. toggle_status**
 
@@ -538,32 +539,32 @@ All HTML pages were validated using the W3C Markup Validation Service
 
 signup.html Validation
 
-![signup.html Validation](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/signupGood.png)
+![signup.html Validation](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/signupGood.png)
 
 login.html Validation
 
-![login.html Validation](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/loginGood.png)
+![login.html Validation](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/loginGood.png)
 
 logout.html Validation
 
-![logout.html Validation](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/logoutGood.png)
+![logout.html Validation](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/logoutGood.png)
 
 edit_task.html Validation
 
-![edit_task.html Validation](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/edit_taskGood.png)
+![edit_task.html Validation](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/edit_taskGood.png)
 
 
 ## CSS Validation
 
 The style.css file was validated using the W3C CSS Validation Service
 
-![CSS Validtation](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/cssGood.png)
+![CSS Validtation](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/cssGood.png)
 
 ## Javascript Validation
 
 The javascript.js file was validate using the validator at JSLint.com
 
-![Testing with JSLint](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/JSLint.png)
+![Testing with JSLint](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/JSLint.png)
 
 ## Python Validation
 
@@ -571,236 +572,59 @@ All python files were validated using the Code Institute Python Linter
 
 Those with the error "E501 line too long" are all files which were automatically created by Django. All custom files have been corrected and validate with no errors. 
 
-![Python vaidation app_adapters.py](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/app_adapters_py.png)
-![Python vaidation app_admin.py](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/app_admin_py.png)
-![Python vaidation app_apps_py.png](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/app_apps_py.png)
-![Python vaidation app_models_py.png](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/app_models_py.png)
-![Python vaidation app_urls.py](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/app_urls_py.png)
-![Python vaidation app_views.py](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/app_views_py.png)
-![Python vaidation proj_asgi.py](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/proj_asgi_py.png)
-![Python vaidation proj_setting.py](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/proj_settings_py.png)
-![Python vaidation proj_urls.py](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/proj_urls_py.png)
-![Python vaidation proj_wsgi.py](https://github.com/Tedbot2000/todo-genie-01/blob/main/docs/images/proj_wsgi_py.png)
+![Python vaidation app_adapters.py](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/app_adapters_py.png)
+![Python vaidation app_admin.py](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/app_admin_py.png)
+![Python vaidation app_apps_py.png](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/app_apps_py.png)
+![Python vaidation app_models_py.png](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/app_models_py.png)
+![Python vaidation app_urls.py](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/app_urls_py.png)
+![Python vaidation app_views.py](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/app_views_py.png)
+![Python vaidation proj_asgi.py](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/proj_asgi_py.png)
+![Python vaidation proj_setting.py](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/proj_settings_py.png)
+![Python vaidation proj_urls.py](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/proj_urls_py.png)
+![Python vaidation proj_wsgi.py](https://github.com/Tedbot2000/todo-genie/blob/main/docs/images/proj_wsgi_py.png)
 
 
 ## Tests
 
-# Testing
+### Responsiveness Test
 
-## Automated Testing
+Responsiveness tests were carried out using Firefox with the Accessibility Properties. Different resolutions were tested to ensure no problems with the siteat each one.
 
-The application was thoroughly tested using Django's automated testing framework. A comprehensive test suite was created to verify all core functionalities of the application.
+### Account Signup, Login, Logout, and Access Tests
 
-### Test Statistics
-- Total number of tests: 12
-- All tests passed successfully
-- Test coverage includes models, views, and user interactions
-- Tests run time: ~2.5 seconds
-
-### Technical Implementation
-
-The test suite uses Django's `TestCase` class which provides:
-- Automatic database setup and teardown for each test
-- A test client for simulating HTTP requests
-- Authentication helpers
-- Assertion methods for verifying responses and database states
-
-Example of the test setup:
-```python
-def setUp(self):
-    """Set up test data"""
-    self.client = Client()
-    # Create a test user
-    self.user = User.objects.create_user(
-        username='testuser',
-        password='testpass123'
-    )
-    # Create a test todo
-    self.todo = Todo.objects.create(
-        todo_name='Test Task',
-        status='Not Started',
-        user=self.user
-    )
-```
-
-### Authentication Tests
-| Test Description | Result |
-|-----------------|--------|
-| User can create an account | Pass |
-| User can log in | Pass |
-| User can log out | Pass |
-| Unauthorized users are redirected to login | Pass |
-| Users cannot access other users' todo lists | Pass |
-
-Example of authentication test:
-```python
-def test_todo_list_view_unauthenticated(self):
-    """Test todo list view redirects for unauthenticated user"""
-    response = self.client.get(reverse('todo_list'))
-    self.assertEqual(response.status_code, 302)  # Redirects to login
-```
-
-### Task Management Tests
-| Test Description | Result |
-|-----------------|--------|
-| Create new task | Pass |
-| Prevent creation of tasks > 60 characters | Pass |
-| Prevent creation of empty tasks | Pass |
-| Edit existing task | Pass |
-| Delete existing task | Pass |
-| View task list | Pass |
-
-Example of task creation test:
-```python
-def test_create_todo(self):
-    """Test creating a new todo item"""
-    self.client.login(username='testuser', password='testpass123')
-    response = self.client.post(reverse('todo_list'), {'task': 'New Task'})
-    self.assertEqual(response.status_code, 302)  # Redirects after creation
-    self.assertTrue(Todo.objects.filter(todo_name='New Task').exists())
-    messages = list(get_messages(response.wsgi_request))
-    self.assertIn('Task "New Task" added successfully!', 
-                 str(messages[0]))
-```
-
-### Task Status Tests
-Example of status toggle test:
-```python
-def test_toggle_status(self):
-    """Test toggling todo status"""
-    self.client.login(username='testuser', password='testpass123')
-    response = self.client.get(
-        reverse('toggle_status', kwargs={'id': self.todo.id})
-    )
-    updated_todo = Todo.objects.get(id=self.todo.id)
-    self.assertEqual(updated_todo.status, 'In Progress')
-```
-
-### Test Coverage Details
-
-#### Model Tests
-The `Todo` model is tested for:
-- Field validations
-- Default values
-- User relationships
-- Maximum length constraints
-
-Example of model test:
-```python
-def test_todo_model(self):
-    """Test Todo model creation and fields"""
-    self.assertEqual(self.todo.todo_name, 'Test Task')
-    self.assertEqual(self.todo.status, 'Not Started')
-    self.assertEqual(self.todo.user, self.user)
-```
-
-#### View Tests
-Views are tested for:
-- HTTP response codes
-- Template rendering
-- Context data
-- Form processing
-- Message generation
-
-Example of view test with message verification:
-```python
-def test_delete_task(self):
-    """Test deleting a todo item"""
-    self.client.login(username='testuser', password='testpass123')
-    response = self.client.get(
-        reverse('delete', kwargs={'id': self.todo.id})
-    )
-    self.assertFalse(Todo.objects.filter(id=self.todo.id).exists())
-    messages = list(get_messages(response.wsgi_request))
-    self.assertIn('Task "Test Task" deleted successfully.', 
-                 str(messages[0]))
-```
-
-#### Security Testing
-Security tests verify:
-- User isolation
-- Authentication requirements
-- Authorization checks
-- CSRF protection
-
-Example of security test:
-```python
-def test_user_cannot_edit_others_todos(self):
-    """Test that users cannot edit other users' todo lists"""
-    other_user = User.objects.create_user(
-        username='otheruser',
-        password='otherpass123'
-    )
-    other_todo = Todo.objects.create(
-        todo_name='Other Task',
-        status='Not Started',
-        user=other_user
-    )
-    
-    self.client.login(username='testuser', password='testpass123')
-    response = self.client.post(
-        reverse('edit', kwargs={'id': other_todo.id}),
-        {'task': 'Hacked Task'}
-    )
-    self.assertEqual(response.status_code, 404)
-```
-
-## Manual Testing
-
-While automated tests cover the core functionality, manual testing verified:
-
-### Responsiveness Testing
-- Testing performed using Firefox with Accessibility Properties
-- Verified layout and functionality across different screen sizes:
-  - Mobile: 320px, 375px, 425px
-  - Tablet: 768px
-  - Laptop: 1024px, 1440px
-  - Desktop: 2560px
-
-### Browser Compatibility
-The application was manually tested on:
-- Firefox (Version 122.0)
-- Chrome (Version 121.0)
-- Safari (Version 17.0)
-- Edge (Version 120.0)
-
-### User Interface Testing
-- Verified all buttons and links are working
-- Confirmed proper display of success/error messages
-- Tested form submissions and validation feedback
-- Checked accessibility features and ARIA labels
-
-## Testing Tools Used
-- Django TestCase framework
-- Firefox Developer Tools
-- Django Debug Toolbar
-- Browser Developer Tools
-
-## Test Execution
-To run the automated test suite:
-```bash
-# Run all tests
-python manage.py test
-
-# Run tests with detailed output
-python manage.py test -v 2
-
-# Run a specific test
-python manage.py test todo.tests.TodoTests.test_create_todo
-```
-
-All tests are located in the `tests.py` file within the todo app directory.
+| Test              | Result |
+| :---------------- | :------: |
+| Create user account    | Pass |
+| Log in             | Pass |
+| Log out           | Pass |
+| Superuser can access admin page | Pass |
+| Non Superusers cannot access admin page | Pass |
+| Users cannot access each others' task lists | Pass |
 
 
-# Deployment
+### Task Tests
+
+| Test              | Result |
+| :---------------- | :------: |
+| User can add a task   | Pass |
+| User cannot enter a task longer than 60 chars | Pass |
+| User cannot enter an empty task  | Pass |
+| User can edit a task   | Pass |
+| User can delete a task | Pass |
+| User can change the status of a task to "In Progress" | Pass |
+| User can change the status of a task to "Complete" | Pass |
+| User can change the status of a task to "Not Started" | Pass |
+
+
+# Deploymnt
 
 The repo was created in Github. Code was created and update updated in Gitpod.
 
-The app was deployed on [Heroku here](https://todo-genie-65081f96d293.herokuapp.com/)
+The app was deployed on [Heroku here](https://todo-genie-65081f96d293.herokuapp.com)
 
 Secret Keys were connected to config vars in Heroku.
 
-The Code Institute PostGres database was connected in Heroku.
+The Code Institute PostGres database was cnnected in Heroku.
 
 
 #Future Features
@@ -817,7 +641,7 @@ Some features which were planned but left for future versions were:
 
 # Credits and Thanks
 
-Some of the basic coding principles came from the Code Institute's module "I Think Therefore I blog" and some of the views.py code came from watching Dennis Ivy's YouTube "To Do App" video: https://www.youtube.com/watch?v=4RWFvXDUmjo
+Some of the basic coding principles came from the Codie Institute's module "I Think Therefore I blog" and some of the views.py code came from watching Dennis Ivy's YouTube "To Do App" video: https://www.youtube.com/watch?v=4RWFvXDUmjo
 
 Other resources used during troubleshooting were Stack Overflow, and W3CSchools.
 
